@@ -1,3 +1,7 @@
+import Mathlib.Init.Data.Nat.Basic
+import Mathlib.Data.Set.Basic
+import Mathlib.Logic.Basic
+
 /-!
 # 基本代數定理證明
 
@@ -132,7 +136,7 @@ theorem factorial_positive (n : ℕ) : factorial n > 0 := by
 ## 可執行的主函數
 -/
 
-def main (args : List String) : IO UInt32 := do
+def runMain : IO UInt32 := do
   IO.println "=== Lean4 基本代數定理證明 ==="
   IO.println ""
   IO.println "定理1: 自然數加法零元素"
@@ -153,4 +157,6 @@ def main (args : List String) : IO UInt32 := do
   IO.println "所有定理證明完成！"
   return 0
 
-end BasicAlgebra 
+end BasicAlgebra
+
+def main : IO UInt32 := BasicAlgebra.runMain

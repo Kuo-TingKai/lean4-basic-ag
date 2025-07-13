@@ -10,4 +10,9 @@ lean_lib lean4_app {
   srcDir := "Lean4App"
 }
 
-require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ "v4.8.0" 
+lean_exe basic_algebra {
+  root := `BasicAlgebra
+  srcDir := "Lean4App"
+}
+
+require mathlib from git "https://github.com/leanprover-community/mathlib4.git" @ "v4.8.0"
