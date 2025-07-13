@@ -1,0 +1,22 @@
+# Lean4 build artifacts
+lake-manifest.json
+lake-packages/
+build/
+.lean/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
+
+# Log files
+*.log 
